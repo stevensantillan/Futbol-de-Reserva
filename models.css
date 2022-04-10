@@ -28,7 +28,7 @@
 /*------------ENCABEZADO---------------*/
 
 .header{
-    background-color: #590404; 
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 42%, rgba(10,178,212,1) 100%); 
     grid-area: header;
     display: flex;
     flex-direction: row;
@@ -59,6 +59,16 @@
     text-decoration: none;     
 }
 
+.header__nav li a:hover{
+    background: rgba(128, 128, 128, 0.534);
+    border-radius: 6px;
+    font-size: 1.2em;
+}
+
+#logomenu{
+    height: 4em;
+}
+
 /*------------NOTICE1-----------------*/
 
 .notice1{
@@ -67,7 +77,7 @@
     flex-direction: column;
     border-style: solid;
     border-color:#000;
-    background-color:#700d0d;
+    background:linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
 }
 
@@ -89,7 +99,7 @@
     flex-direction: column-reverse;
     border-style: solid;
     border-color: #000;
-    background-color: #700d0d;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
     justify-content: space-evenly;
     align-items: center;
@@ -110,7 +120,7 @@
     flex-direction: column-reverse;
     border-style: solid;
     border-color: #000;
-    background-color: #700d0d;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(252, 252, 252);
     justify-content: space-evenly;
     align-items: center;
@@ -128,7 +138,7 @@
 .table{
     grid-area: tabla;
     border-style: solid;
-    border-color: #700d0d;
+    border-color: #060230;
     height: auto;
 }
 
@@ -139,7 +149,7 @@
 /*--------------FOOTER---------------*/
 
 .footer{
-    background-color: #590404; 
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 42%, rgba(10,178,212,1) 100%);
     grid-area: footer;
     display: flex;
     flex-direction: row;
@@ -280,7 +290,7 @@
 
 .mainest{
     grid-area: main;   
-    background-color: #590404; 
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -303,7 +313,7 @@
 .tablaest{
     grid-area: tablaest;
     border-style: solid;
-    border-color: #700d0d;
+    border-color: #060230;
     height: auto;
 }
 
@@ -320,7 +330,7 @@
     flex-direction: column;
     border-style: solid;
     border-color:#000;
-    background-color:#700d0d;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
 }
 
@@ -350,7 +360,7 @@
     flex-direction: column;
     border-style: solid;
     border-color:#000;
-    background-color:#700d0d;
+    background:linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
 }
 
@@ -432,7 +442,7 @@
 
 .mainnoticias{
     grid-area: mainnoticias;   
-    background-color: #590404;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     height: 9em;
     width: 100%;
     position: relative;
@@ -453,7 +463,7 @@
     flex-direction: row-reverse;
     border-style: solid;
     border-color:#000;
-    background-color:#700d0d;
+    background:linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
     align-items: stretch;
 }
@@ -495,7 +505,7 @@
     flex-direction: row-reverse;
     border-style: solid;
     border-color:#000;
-    background-color:#700d0d;
+    background:linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
     align-items: stretch;
 }
@@ -646,7 +656,7 @@
 
 .mainpartidos{
     grid-area: mainpartidos;   
-    background-color: #590404;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     height: 9em;
     width: 100%;
     position: relative;
@@ -667,7 +677,7 @@
     flex-direction: row;
     border-style: solid;
     border-color:#000;
-    background-color:#700d0d;
+    background:linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: rgb(255, 255, 255);
     align-items: stretch;
     max-width: 100%;
@@ -694,7 +704,7 @@
 .tablapart{
     grid-area: tablapart;
     border-style: solid;
-    border-color: #700d0d;
+    border-color: #060230;
     height: auto;
 }
 
@@ -764,10 +774,6 @@
         grid-area: sectionpart1;
         display: flex;
         flex-direction: column;
-        border-style: solid;
-        border-color:#000;
-        background-color:#700d0d;
-        color: rgb(255, 255, 255);
         align-items: center;
         max-width: 100%;
         flex-wrap: nowrap;
@@ -818,7 +824,7 @@
 
 .mainpos{
     grid-area: mainpos;   
-    background-color: #590404;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     height: 9em;
     width: 100%;
     position: relative;
@@ -836,7 +842,7 @@
 .tablapos{
     grid-area: tablapos;
     border-style: solid;
-    border-color: #700d0d;
+    border-color: #060230;
     height: auto;
 }
 
@@ -907,7 +913,7 @@
 
 .mainlog{
     grid-area: mainlog;   
-    background-color: #590404;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     height: 9em;
     width: 100%;
     position: relative;
@@ -926,7 +932,7 @@
     grid-area: formlog;
     border-style: solid;
     border-color: #000000;
-    background-color: rgb(116, 8, 8); opacity: 95%;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: #f0f8ff;
     display: inline;   
 }
@@ -972,7 +978,7 @@
     grid-area: divlog1;
     border-style: solid;
     border-color: #000000;
-    background-color: rgb(116, 8, 8); opacity: 95%;
+    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
     color: #f0f8ff;
     display: inline;
 }
