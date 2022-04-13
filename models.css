@@ -398,6 +398,16 @@
         font-size: 13px;
     }
 
+    .sectionsindex{
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "notice1"
+        "notice2" 
+        "notice3";
+    }
+    
+
     .body__index{
         width: 100%;
     }
