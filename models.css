@@ -400,13 +400,24 @@
 
     .sectionsindex{
         grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
     grid-template-areas:
         "notice1"
         "notice2" 
         "notice3";
     }
     
+    .notice1__video{
+        height: 250px;
+    }
+
+    .notice2 a{
+        height: 200px;
+    }
+
+    .notice3 a{
+            height: 200px;
+    }
 
     .body__index{
         width: 100%;
