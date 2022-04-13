@@ -585,28 +585,6 @@
 
 /*------------ESTADISTICAS-TABLET-----------------*/
 
-@media (max-width: 1420px){
-    
-   
-}
-
-
-
-@media (max-width: 1200px){
-    
-    
-
-}
-
-
-@media (max-width: 1075px){
-   
-}
-
-
-@media (max-width: 992px){
-   
-}
 
 @media (max-width: 960px){
     .sectionest1__cont p{
@@ -793,44 +771,37 @@
 
 /*------------NOTICIAS TABLET-----------------*/
 
-@media (max-width: 1420px){
-    
-   
-}
-
-
-
-@media (max-width: 1200px){
-    
-    
-
-}
-
-
-@media (max-width: 1075px){
-   
-}
-
-
-@media (max-width: 992px){
-   
-}
-
-@media (max-width: 960px){
-    
-}
-
 @media (max-width: 800px){
-   
+   .sectionnot1 div{
+       font-size: 14px;
+   }
+
+   .sectionnot1 img{
+       padding-top: 20px;
+   }
+
+   .sectionnot2 div{
+    font-size: 14px;
+}
+
+.sectionnot2 img{
+    padding-top: 20px;
+}
 }
 
 @media (max-width: 680px){
-   
+    .sectionnot1 img{
+        padding-top: 40px;
+        height: 400px;
+    }
+
+    .sectionnot2 img{
+        padding-top: 40px;
+        height: 400px;
+    }
+ 
 }
 
-@media (min-width: 576px) and (max-width: 679px){
-   
-}
 
 /*------------NOTICIAS TABLET-----------------*/
 
@@ -838,42 +809,39 @@
 
 @media (max-width: 499px){
     
-    .body__noticias{
+    .sectionnot1 div{
+        font-size: 12px;
         width: 100%;
-          grid-template-columns: 1fr;
-          grid-template-rows: 0.1fr 0.05fr 3fr 3fr 0.9fr;
-          grid-template-areas: 
-          "header"
-          "mainnoticias"
-          "sectionnot1"
-          "sectionnot2"
-          "footer"
     }
-
-    .sectionnot1{
-        align-items: center;
-    }
-
+ 
     .sectionnot1 img{
-        height: 97%;
-        max-width: 20em;
-        padding-top: 1%;
-        padding-bottom: 1%;
-
-        
+        width: 100%;
+        padding-bottom: 10px;
     }
+ 
+    .sectionnot2 div{
+        font-size: 12px;
+        width: 100%;
+ }
+ 
+ .sectionnot2 img{
+    width: 100%;
+    padding-bottom: 10px;
+ } 
+}
 
-    .sectionnot2{
-        align-items: center;
-    }
-
-    .sectionnot2 img{
-        height: 97%;
-        max-width: 20em;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
+ @media (max-width: 320px){
     
+   
+    .sectionnot1 img{
+        height: 250px;
+    }
+ 
+    
+    .sectionnot2 img{
+        height: 250px;
+ } 
+
 }
 
 /*------------NOTICIAS MOBILE-----------------*/
@@ -888,22 +856,6 @@
     padding: 0;
     margin: 0;
 }
-
-/*------------SUBTITULO PARTIDOS-----------------*/
-
-.mainpartidos{  
-    background: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
-    height: 9em;
-    width: 100%;
-    position: relative;
-}
-
-.mainpartidos h1{
-    color: rgb(255, 255, 255);
-    font-size: 4em;
-    height: 100%;
-    padding-top: 2%;
-    padding-left: 2%;}
 
 /*------------SECTION PARTIDOS-----------------*/
 
@@ -939,43 +891,146 @@
 
 /*------------PARTIDOS TABLET-----------------*/
 
-@media (max-width: 1420px){
-    
-   
-}
-
-
-
 @media (max-width: 1200px){
     
-    
+    .carousel-inner{
+        height: 1200px;
+        max-height: 1200px;
+    }
 
+    .carousel-inner div img{
+        width: 1100px;
+        max-width: 1100px;
+        height: 850px;
+        max-height:850px;}
+
+    .galeria{
+        height: 1000px;
+        max-height: 1000px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .tablapart{
+        height: 800px;
+    }
+
+    .tablapart table{
+        height: 100%;
+    }
 }
-
 
 @media (max-width: 1075px){
-   
+    .carousel-inner{
+        height: 1100px;
+        max-height: 1100px;
+    }
+
+    .carousel-inner div img{
+        width: 1100px;
+        max-width: 1100px;
+        height: 850px;
+        max-height:850px;}
+
+    .galeria{
+        height: 900px;
+        max-height: 900px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tablapart{
+        height: 800px;
+    }
+
+    .tablapart table{
+        height: 100%;
+    }
 }
 
-
-@media (max-width: 992px){
-   
-}
 
 @media (max-width: 960px){
-    
+    .carousel-inner{
+        height: 1000px;
+        max-height: 1000px;
+    }
+
+    .carousel-inner div img{
+        width: 1000px;
+        max-width: 1000px;
+        height: 850px;
+        max-height:850px;}
+
+    .galeria{
+        height: 900px;
+        max-height: 900px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tablapart{
+        height: 700px;
+    }
+
+    .tablapart table{
+        height: 100%;
+    }
 }
 
 @media (max-width: 800px){
-   
+    .carousel-inner{
+        height: 900px;
+        max-height: 900px;
+    }
+
+    .carousel-inner div img{
+        width: 900px;
+        max-width: 900px;
+        height: 750px;
+        max-height:750px;}
+
+    .galeria{
+        height: 800px;
+        max-height: 800px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tablapart{
+        height: 700px;
+    }
+
+    .tablapart table{
+        height: 100%;
+    }
 }
 
-@media (max-width: 680px){
-   
-}
+@media (min-width: 500px) and (max-width: 679px){
+    .carousel-inner{
+        height: 800px;
+        max-height: 800px;
+    }
 
-@media (min-width: 576px) and (max-width: 679px){
-   
+    .carousel-inner div img{
+        width: 800px;
+        max-width: 800px;
+        height: 650px;
+        max-height:650px;}
+
+    .galeria{
+        height: 700px;
+        max-height: 700px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tablapart{
+        height: 600px;
+    }
+
+    .tablapart table{
+        height: 100%;
+    }
 }
 
 /*------------PARTIDOS TABLET-----------------*/
@@ -985,44 +1040,31 @@
 
 @media (max-width: 499px){
     
-    .body__partidos{
-        max-width: 100%;
-          grid-template-columns: 1fr;
-          grid-template-rows: 0.25fr 0.1fr 1.5fr 0.2fr 0.05fr;
-          grid-template-areas: 
-        
-        "header"
-        "mainpartidos"
-        "sectionpart1"
-        "tablapart"
-        "footer" 
-    }
-    
-    .sectionpart1{
-        grid-area: sectionpart1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+    .carousel-inner{
+        height: 600px;
+        max-height: 600px;
     }
 
-    .sectionpart1__img1{
-        align-items: stretch;
-        width: 20em;
-    }
-    
-    .sectionpart1__img2{
-        align-items: stretch;
-        width: 20em;
-    }
-    
-    .sectionpart1__img3{
-        align-items: stretch;
-        width: 20em;
+    .carousel-inner div img{
+        width: 700px;
+        max-width: 700px;
+        height: 500px;
+        max-height: 500px;}
+
+    .galeria{
+        height: 500px;
+        max-height: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
+    .tablapart{
+        height: 500px;
+    }
+
+    .tablapart table{
+        height: 100%;
+    }
 }
 
 /*------------PARTIDOS MOBILE-----------------*/
@@ -1054,66 +1096,15 @@
 
 /*------------POSICIONES-----------------*/
 
-/*------------POSICIONES TABLET-----------------*/
-
-@media (max-width: 1420px){
-    
-   
-}
-
-
-
-@media (max-width: 1200px){
-    
-    
-
-}
-
-
-@media (max-width: 1075px){
-   
-}
-
-
-@media (max-width: 992px){
-   
-}
-
-@media (max-width: 960px){
-    
-}
-
-@media (max-width: 800px){
-   
-}
-
-@media (max-width: 680px){
-   
-}
-
-@media (min-width: 576px) and (max-width: 679px){
-   
-}
-/*------------POSICIONES TABLET-----------------*/
-
 /*------------POSICIONES MOBILE-----------------*/
 
 @media (max-width: 499px){
-    
-    .body__posiciones{
-        width: 100%;
-          grid-template-columns: 1fr;
-          grid-template-rows: 0.1fr 0.05fr 3fr 0.9fr;
-          grid-template-areas: 
-        "header"
-        "mainpos"
-        "tablapos"
-        "footer"
+    .tablapos{
+        height: 600px;
     }
 }
 
 /*------------POSICIONES MOBILE-----------------*/
-
 
 
 /*------------LOG IN-----------------*/
@@ -1254,42 +1245,70 @@
 /*------------LOG IN TABLET-----------------*/
 
 @media (max-width: 1420px){
-    
-   
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 
 
 @media (max-width: 1200px){
     
-    
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
 }
 
 
 @media (max-width: 1075px){
-   
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 
 @media (max-width: 992px){
-   
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 960px){
-    
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 800px){
-   
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
-@media (max-width: 680px){
-   
-}
 
-@media (min-width: 576px) and (max-width: 679px){
-   
+@media (min-width: 500px) and (max-width: 679px){
+    .divlog1 fieldset{
+        margin:0;
+    }
 }
 
 /*------------LOG IN TABLET-----------------*/
@@ -1300,20 +1319,52 @@
     
     .body__login{
         width: 100%;
-          grid-template-columns: 1fr;
-          grid-template-rows: 0.1fr 0.05fr 3fr 3fr 0.6fr;
-          grid-template-areas: 
-          "header"
-          "mainlog"
-          "formlog" 
-          "divlog1"
-          "footer"
+        max-width: 499px;
+    }
+
+    .divlog1 fieldset{
+        padding-left: 35px;
+        padding-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 320px){
+    
+    .body__login{
+        width: 320px;
+        max-width: 320px;
     }
 
     .formlog{
-        width: 100%;
+        width: 320px;
+        max-width: 320px;
     }
+
+    .formlog h3{
+        font-size: 14px;
+    }
+
+    .divlog1{
+        width: 320px;
+        max-width: 320px;
+    }
+
+    .divlog1 fieldset{
+        padding: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .divlog1 h3{
+        font-size: 14px;
+    }
+
+    
 }
+
 
 /*------------LOG IN MOBILE-----------------*/
 
