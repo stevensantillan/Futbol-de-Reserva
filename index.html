@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fútbol de Reserva</title>
     <link rel="shortcut icon" href="multimedia/LPF.ico.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="models.css">
 </head>
 
-<body class="body__index">
+<body class="container-fluid body__index">
     
-        <header class="header">    
-                <ul class="header__home">
+        <header class="row header">    
+                <ul class="col-3 header__home">
                     <li class="header__nav--li"><a class="header__nav--li--a" href="index.html"><img id=logomenu src="multimedia/Logo_Liga_Profesional_de_Fútbol_(Argentina).png" alt="logoenc"></a></li>
                 </ul> 
-                <ul class="header__nav">
+                <ul class="col-4 header__nav">
                     <li class="header__nav--li"><a class="header__nav--li--a" href="pages/estadisticas.html">Estadísticas</a></li>
                     <li class="header__nav--li"><a class="header__nav--li--a" href="pages/noticias.html">Noticias</a></li>
                     <li class="header__nav--li"><a class="header__nav--li--a" href="pages/partidos.html">Partidos</a></li>
@@ -24,76 +25,83 @@
                 </ul>  
         </header>
 
-    
-        <section class="notice1">
-                <iframe class="notice1__video" width="560" height="315" src="https://www.youtube.com/embed/obwDYJLGMQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="notice1__format">
-                    <h3>
-                        Un encuentro emocionante
-                    </h3>
-                    <p>
-                        River, el puntero del torneo sigue encaminado a ser uno de los protagonistas de la temporada. El equipo de la rivera aplastó a San Lorenzo por 4 a 0 en una actuación excepcional
-                    </p> 
-                </div>    
-        </section>
-    
-        <section class="notice2">
-            <h5 class="notice2__title">Union y Belgrano disputaron un partido muy parejo</h5>
-            <img class="notice2__img" class="image1" src="multimedia/unibel.jpg" alt="Union vs Belgrano">
-        </section>
+        <div class="row cuerpoindex">
 
-        <section class="notice3">
-            <h5 class="notice3__title">Gran victoria de Talleres como visitante del Granate</h5>
-            <img class="notice3__img" src="multimedia/lanustall.jpg" alt="Lanus vs Talleres">  
-        </section>
+            <div class="col-9 sectionsindex">
+                    <section class="notice1">
+                        <iframe class="notice1__video" width="560" height="315" src="https://www.youtube.com/embed/obwDYJLGMQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                        <div class="notice1__format">
+                            <h3>
+                                Un encuentro emocionante
+                            </h3>
+                            <p>
+                                River, el puntero del torneo sigue encaminado a ser uno de los protagonistas de la temporada. El equipo de la rivera aplastó a San Lorenzo por 4 a 0 en una actuación excepcional
+                            </p> 
+                        </div> 
 
-        <aside class="table">
-            <table>
-                <th>Partido</th>
-                <th>Fecha</th>
-                <th>Horario</th>
-                <th>Lugar</th>
+                    </section>
             
-            <tr>
-                <td>Boca vs Sarmiento</td>
-                <td>20/03</td>
-                <td>9:00hs</td>
-                <td>Casa Amarilla</td>
-            </tr>
-
-            <tr>
-                <td>Racing vs Velez Sarfield</td>
-                <td>20/03</td>
-                <td>9:00hs</td>
-                <td>Predio Tita Mattiussi</td>
-            </tr>
-
-            <tr>
-                <td>Independiente vs Colon</td>
-                <td>20/03</td>
-                <td>9:00hs</td>
-                <td>Villa Domínico</td>
-            </tr>
-
-            <tr>
-                <td>River vs Arsenal</td>
-                <td>21/03</td>
-                <td>9:00hs</td>
-                <td>River Camp</td>
-            </tr>
-
-            <tr>
-                <td>Rosario Central vs Barracas Central</td>
-                <td>20/03</td>
-                <td>9:00hs</td>
-                <td>Predio Arroyo Seco</td>
-            </tr>
-            </table>
-        </aside>
-    
-    <footer class="footer">
+                    <section class="notice2">
+                        <h5 class="notice2__title">Union y Belgrano disputaron un partido muy parejo</h5>
+                        <a href="pages/noticias.html"><img class="notice2__img" src="multimedia/unibel.jpg" alt="Union vs Belgrano"></a>
+                        
+                    </section>
         
-        <ul class="footer__social">
+                    <section class="notice3">
+                        <h5 class="notice3__title">Gran victoria de Talleres como visitante del Granate</h5>
+                        <a href="pages/noticias.html"><img class="notice3__img" src="multimedia/lanustall.jpg" alt="Lanus vs Talleres"></a>
+                         
+                    </section>   
+            </div>
+
+                <table class="col-3 tabla">
+                    <th>Partido</th>
+                    <th>Fecha</th>
+                    <th>Horario</th>
+                    <th>Lugar</th>
+                
+                <tr>
+                    <td>Boca vs Sarmiento</td>
+                    <td>20/03</td>
+                    <td>9:00hs</td>
+                    <td>Casa Amarilla</td>
+                </tr>
+    
+                <tr>
+                    <td>Racing vs Velez Sarfield</td>
+                    <td>20/03</td>
+                    <td>9:00hs</td>
+                    <td>Predio Tita Mattiussi</td>
+                </tr>
+    
+                <tr>
+                    <td>Independiente vs Colon</td>
+                    <td>20/03</td>
+                    <td>9:00hs</td>
+                    <td>Villa Domínico</td>
+                </tr>
+    
+                <tr>
+                    <td>River vs Arsenal</td>
+                    <td>21/03</td>
+                    <td>9:00hs</td>
+                    <td>River Camp</td>
+                </tr>
+    
+                <tr>
+                    <td>Rosario Central vs Barracas Central</td>
+                    <td>20/03</td>
+                    <td>9:00hs</td>
+                    <td>Predio Arroyo Seco</td>
+                </tr>
+                </table>   
+        </div>
+        
+    
+    <footer class=" row footer">
+        
+        <ul class="col-4 footer__social">
             <li class="footer__social--li">
                 <a  class="footer__social--li--a" href="https://instagram.com" target="_blank">Instagram</a>
             </li>
@@ -108,10 +116,14 @@
             </li>
         </ul>
 
-        <div class="footer__copy">
+        <div class="col-3 footer__copy">
             <h5>Derechos Reservados AFA</h5>
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 </html>
