@@ -1,0 +1,97 @@
+/*------------ENCABEZADO---------------*/
+
+.header{
+    background: $colorprincipal; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    font-size: 1em;
+    height: 9em;
+    .header__home{
+        display: flex;
+        align-items: center;
+        margin-left: 4%;
+        li{
+            list-style-type: none;
+            a{
+                #logomenu{
+                    height: 4em;}
+                &:hover{
+                    font-size: 1.3em;}
+                }
+            }
+        }
+    .header__nav{
+        display: inline-flex;
+        align-items: center; 
+        li{
+            list-style-type: none;
+            padding-left: 2em;
+            a{
+                color: #f0ffff;
+                text-decoration: none;  
+                &:hover{
+                    background: rgba(57, 10, 224, 0.534);
+                    color: $colorfuentehover;
+                    border-radius: 20px;
+                    font-size: 1.3em;
+                    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);}
+                }
+            }       
+        }
+    }
+
+/*--------------FOOTER---------------*/
+
+.footer{
+    background: $colorprincipal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    height: 7em;
+    margin-bottom: 0;
+    .footer__social{
+        margin-left: 4%;
+        display: inline-flex;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                list-style: none;
+                color: #f0ffff;
+                padding-left: 4em;
+                &:hover{
+                    color: $colorfuentehover;}
+                }   
+            }
+        }
+    .footer__copy{
+            margin-right: 1%;}
+}
+
+/*--------------SUBTITULOS---------------*/
+
+.main{ 
+    background: $colorsecundario;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 9em;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    h1{
+        color: $colorfuente;
+        font-size: 3.5em;
+        height: 100%;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+}
