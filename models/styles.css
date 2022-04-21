@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+.bodys {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+.cajaestandar, .cajaborderedondo, .cajatablas {
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
+  color: #f0ffff; }
+
+.cajaborderedondo {
+  border-radius: 5px; }
+
+.cajatablas {
+  background: #f3f0f0;
+  color: #000; }
+
 /*------------ENCABEZADO---------------*/
 .header {
   background: linear-gradient(90deg, #02001b 0%, #05055c 42%, #0ab2d4 100%);
@@ -86,13 +107,6 @@
   font-family: 'Fredoka', sans-serif; }
 
 /*------------INDEX-----------------*/
-.body__index {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
 .row {
   margin: 0; }
 
@@ -116,12 +130,6 @@
   grid-area: notice1;
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-color: #000;
-  border-radius: 5px;
-  border-width: 2px;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   margin-left: 2px;
   margin-top: 0.1%; }
   .notice1 .notice1__video {
@@ -135,7 +143,7 @@
     padding-bottom: 1%;
     padding-right: 3%;
     padding-left: 3%; }
-    .notice1 .notice1__format h3 {
+    .notice1 .notice1__format h2 {
       font-weight: bold; }
 
 /*------------NOTICE2----------------*/
@@ -143,12 +151,6 @@
   grid-area: notice2;
   display: flex;
   flex-direction: column-reverse;
-  border-style: solid;
-  border-color: #000;
-  border-radius: 5px;
-  border-width: 2px;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.2em;
@@ -162,20 +164,14 @@
   .notice2 a:hover {
     height: 101%;
     width: 101%; }
-  .notice2 h5 {
+  .notice2 h3 {
     padding-bottom: 2%; }
 
 /*-------------NOTICE3----------------*/
 .notice3 {
-  grid-area: notice3;
   display: flex;
   flex-direction: column-reverse;
-  border-style: solid;
-  border-color: #000;
-  border-radius: 5px;
-  border-width: 2px;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
+  grid-area: notice3;
   justify-content: space-evenly;
   align-items: center;
   font-size: 1.2em;
@@ -189,32 +185,18 @@
   .notice3 a:hover {
     height: 101%;
     width: 101%; }
-  .notice3 h5 {
+  .notice3 h3 {
     padding-bottom: 2%; }
 
 /*-------------ASIDE------------------*/
 .tabla {
-  border-style: solid;
-  border-color: #000;
-  border-radius: 5px;
-  border-width: 2px;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
 
 /*------------INDEX-----------------*/
 /*------------ESTADISTICAS-----------------*/
-.body__stats {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
 /*--------------TABLA EST---------------*/
 .tablaest {
-  border-style: solid;
-  border-color: #060230;
-  border-width: 0.1%;
   padding: 0;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
@@ -226,11 +208,6 @@
 .sectionest1 {
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-color: #000;
-  border-width: 0.1%;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
   .sectionest1 div {
@@ -250,11 +227,6 @@
 .sectionest2 {
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-color: #000;
-  border-width: 0.1%;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
   .sectionest2 div {
@@ -270,26 +242,14 @@
 
 /*------------ESTADISTICAS-----------------*/
 /*------------NOTICIAS-----------------*/
-.body__noticias {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
 /*--------------SECTION 1 NOTICIAS---------------*/
 .sectionnot1 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  border-style: solid;
-  border-color: #000;
-  border-width: 2px;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
-  .sectionnot1 h3 {
+  .sectionnot1 h2 {
     text-decoration: underline;
     padding-top: 1%;
     font-size: 2em; }
@@ -308,14 +268,9 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  border-style: solid;
-  border-color: #000;
-  border-width: 2px;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
-  .sectionnot2 h3 {
+  .sectionnot2 h2 {
     text-decoration: underline;
     padding-top: 1%;
     font-size: 2em; }
@@ -331,19 +286,8 @@
 
 /*------------NOTICIAS-----------------*/
 /*------------PARTIDOS-----------------*/
-.body__partidos {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
 /*------------SECTION PARTIDOS-----------------*/
 .galeria {
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  border-style: solid;
-  border-color: #060230;
-  border-width: 2px;
   display: flex;
   height: 700px;
   padding-left: 30%;
@@ -358,9 +302,6 @@
 
 /*------------TABLA PARTIDOS-----------------*/
 .tablapart {
-  border-style: solid;
-  border-color: #060230;
-  border-width: 2px;
   height: auto;
   margin-bottom: 0.1%; }
   .tablapart table {
@@ -369,18 +310,8 @@
 
 /*------------PARTIDOS-----------------*/
 /*------------POSICIONES-----------------*/
-.body__posiciones {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
 /*------------ TABLA POSICIONES-----------------*/
 .tablapos {
-  border-style: solid;
-  border-color: #060230;
-  border-width: 2px;
   height: 900px;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
@@ -390,24 +321,12 @@
 
 /*------------POSICIONES-----------------*/
 /*------------LOG IN-----------------*/
-.body__login {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0; }
-
 /*------------LOG IN INGRESO-----------------*/
 .formlog {
-  border-style: solid;
-  border-color: #000000;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   display: flex;
-  border-width: 0.1em;
   width: 100%;
   margin-top: 0.1%; }
-  .formlog h3 {
+  .formlog h2 {
     padding-top: 1%;
     font-size: 3em;
     text-align: center;
@@ -433,15 +352,10 @@
 
 /*------------LOG IN REGISTRARSE-----------------*/
 .divlog1 {
-  border-style: solid;
-  border-width: 0.1em;
-  border-color: #000000;
   margin-top: 0.1%;
   margin-bottom: 0.1%;
-  background: linear-gradient(90deg, #02001b 0%, #05055c 9%, #0ab2d4 59%);
-  color: #f0ffff;
   width: 100%; }
-  .divlog1 h3 {
+  .divlog1 h2 {
     padding-top: 1%;
     font-size: 3em;
     text-align: center;
@@ -531,7 +445,7 @@
     width: 100%; }
   .sectionsindex {
     width: 100%; }
-  .footer__copy h5 {
+  .footer__copy h3 {
     font-size: 14px; } }
 
 @media (max-width: 800px) {
@@ -544,7 +458,7 @@
     width: 100%; }
   .footer {
     font-size: 12px; }
-    .footer .footer__copy h5 {
+    .footer .footer__copy h3 {
       font-size: 12px; } }
 
 @media (max-width: 680px) {
@@ -559,7 +473,7 @@
     width: 100%; }
   .footer {
     font-size: 12px; }
-    .footer .footer__copy h5 {
+    .footer .footer__copy h3 {
       font-size: 12px; } }
 
 @media (min-width: 576px) and (max-width: 679px) {
@@ -575,7 +489,7 @@
     width: 100%; }
   .footer {
     font-size: 12px; }
-    .footer .footer__copy h5 {
+    .footer .footer__copy h3 {
       font-size: 12px; } }
 
 /*------------INDEX-TABLET-----------------*/
@@ -635,7 +549,7 @@
       padding-left: 16px;
       margin-right: 0;
       width: 100px; }
-      .footer .footer__copy h5 {
+      .footer .footer__copy em {
         font-size: 7px;
         color: #f0ffff; } }
 
@@ -934,12 +848,12 @@
   .formlog {
     width: 320px;
     max-width: 320px; }
-    .formlog h3 {
+    .formlog h2 {
       font-size: 14px; }
   .divlog1 {
     width: 320px;
     max-width: 320px; }
-    .divlog1 h3 {
+    .divlog1 h2 {
       font-size: 14px; }
     .divlog1 fieldset {
       padding: 0;

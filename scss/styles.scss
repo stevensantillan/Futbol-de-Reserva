@@ -1,7 +1,6 @@
 @import "variables"; 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 @import "headfootsub";
-@import "mediaquerys";
 
 *{
     padding: 0;
@@ -9,15 +8,8 @@
     font-family: 'Fredoka', sans-serif;
 } 
 
-/*------------INDEX-----------------*/
 
-.body__index{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
+/*------------INDEX-----------------*/
 
 .row{
     margin: 0;
@@ -48,14 +40,7 @@
 
 .notice1{
     grid-area: notice1;
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-color:#000;
-    border-radius: 5px;
-    border-width: 2px;
-    background: $colorsecundario;
-    color: $colorfuente;
+    @include flexbox (flex, column);
     margin-left: 2px;
     margin-top: 0.1%;
     .notice1__video{
@@ -69,23 +54,17 @@
         padding-bottom: 1%;
         padding-right: 3%;
         padding-left: 3%;
-        h3{
+        h2{
             font-weight: bold;}
     }
 }
+
 
 /*------------NOTICE2----------------*/
 
 .notice2{
     grid-area: notice2;
-    display: flex;
-    flex-direction: column-reverse;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 5px;
-    border-width: 2px;
-    background: $colorsecundario;
-    color: $colorfuente;
+    @include flexbox (flex, column-reverse);
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.2em;
@@ -101,22 +80,15 @@
             height: 101%;
             width: 101%;}
     } 
-    h5{
+    h3{
         padding-bottom: 2%;}
 }
 
 /*-------------NOTICE3----------------*/
 
 .notice3{
+    @include flexbox (flex, column-reverse);
     grid-area: notice3;
-    display: flex;
-    flex-direction: column-reverse;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 5px;
-    border-width: 2px;
-    background: $colorsecundario;
-    color: $colorfuente;
     justify-content: space-evenly;
     align-items: center;
     font-size: 1.2em;
@@ -132,40 +104,24 @@
             height: 101%;
             width: 101%;}
         }
-    h5{
+    h3{
             padding-bottom: 2%;} 
 }
 
 /*-------------ASIDE------------------*/
 
 .tabla{
-    border-style: solid;
-    border-color: #000;
-    border-radius: 5px;
-    border-width: 2px;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
 }
 
 /*------------INDEX-----------------*/
 
-
 /*------------ESTADISTICAS-----------------*/
-
-.body__stats{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
 
 /*--------------TABLA EST---------------*/
 
 .tablaest{
-    border-style: solid;
-    border-color: #060230;
-    border-width: 0.1%;
     padding: 0;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
@@ -177,13 +133,7 @@
 /*--------------NOTICIA 1 EST---------------*/
 
 .sectionest1{
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-color:#000;
-    border-width: 0.1%;
-    background: $colorsecundario;
-    color: $colorfuente;
+    @include flexbox (flex, column);
     margin-top: 0.1%;
     margin-bottom: 0.1%;
     div{
@@ -204,13 +154,7 @@
 /*--------------NOTICIA 2 EST---------------*/
 
 .sectionest2{
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-color:#000;
-    border-width: 0.1%;
-    background:$colorsecundario;
-    color: $colorfuente;
+    @include flexbox (flex, column);
     margin-top: 0.1%;
     margin-bottom: 0.1%;
     div{
@@ -230,28 +174,14 @@
 
 /*------------NOTICIAS-----------------*/
 
-.body__noticias{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 /*--------------SECTION 1 NOTICIAS---------------*/
 
 .sectionnot1{
-    display: flex;
-    flex-direction: row-reverse;
+    @include flexbox (flex, row-reverse);
     justify-content: flex-end;
-    border-style: solid;
-    border-color:#000;
-    border-width: 2px;
-    background:$colorsecundario;
-    color: $colorfuente;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
-    h3{
+    h2{
         text-decoration: underline;
         padding-top: 1%;
         font-size: 2em;}
@@ -269,17 +199,11 @@
 /*--------------SECTION 2 NOTICIAS---------------*/
 
 .sectionnot2{
-    display: flex;
-    flex-direction: row-reverse;
+    @include flexbox (flex, row-reverse);
     justify-content: flex-end;
-    border-style: solid;
-    border-color:#000;
-    border-width: 2px;
-    background:$colorsecundario;
-    color: $colorfuente;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
-    h3{
+    h2{
         text-decoration: underline;
         padding-top: 1%;
         font-size: 2em;}
@@ -299,21 +223,9 @@
 
 /*------------PARTIDOS-----------------*/
 
-.body__partidos{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 /*------------SECTION PARTIDOS-----------------*/
 
-.galeria{
-    background: $colorsecundario;
-    border-style: solid;
-    border-color: #060230;
-    border-width: 2px;
+.galeria{ 
     display: flex;
     height: 700px;
     padding-left: 30%;
@@ -330,9 +242,6 @@
 /*------------TABLA PARTIDOS-----------------*/
 
 .tablapart{
-    border-style: solid;
-    border-color: #060230;
-    border-width: 2px;
     height: auto;
     margin-bottom: 0.1%;
     table{
@@ -345,20 +254,9 @@
 
 /*------------POSICIONES-----------------*/
 
-.body__posiciones{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 /*------------ TABLA POSICIONES-----------------*/
 
 .tablapos{
-    border-style: solid;
-    border-color: #060230;
-    border-width: 2px;
     height: 900px;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
@@ -373,26 +271,13 @@
 
 /*------------LOG IN-----------------*/
 
-.body__login{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 /*------------LOG IN INGRESO-----------------*/
 
 .formlog{
-    border-style: solid;
-    border-color: #000000;
-    background: $colorsecundario;
-    color: $colorfuente;
     display: flex;   
-    border-width: 0.1em;
     width: 100%;
     margin-top: 0.1%;
-    h3{
+    h2{
         padding-top: 1%;
         font-size: 3em;
         text-align: center;
@@ -421,15 +306,10 @@
 /*------------LOG IN REGISTRARSE-----------------*/
 
 .divlog1{
-    border-style: solid;
-    border-width: 0.1em;
-    border-color: #000000;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
-    background: $colorsecundario;
-    color: $colorfuente;
     width: 100%;
-    h3{
+    h2{
         padding-top: 1%;
         font-size: 3em;
         text-align: center;
@@ -445,8 +325,7 @@
         padding-left: 1em;
         padding-right: 1em;
         padding-bottom: 0.8em;
-        display: flex;
-        flex-direction: column;
+        @include flexbox (flex, column);
         align-items: center;
         #nombrereg{
             width: 8em;
@@ -534,7 +413,7 @@
         width: 100%;}
     .sectionsindex{
         width: 100%;}
-    .footer__copy h5{
+    .footer__copy h3{
         font-size: 14px;}
 }
 
@@ -548,7 +427,7 @@
         width: 100%;}
     .footer{
         font-size: 12px;
-        .footer__copy h5{
+        .footer__copy h3{
             font-size: 12px;}
     }
 }
@@ -566,7 +445,7 @@
         width: 100%;}
     .footer{
         font-size: 12px;
-        .footer__copy h5{
+        .footer__copy h3{
             font-size: 12px;}
     }
 }
@@ -585,7 +464,7 @@
         width: 100%;}
     .footer{
         font-size: 12px;
-        .footer__copy h5{
+        .footer__copy h3{
             font-size: 12px;}
     }
 }
@@ -657,7 +536,7 @@
             padding-left: 16px;
             margin-right: 0;
             width: 100px;
-            h5{
+            em{
                 font-size: 7px;
                 color: $colorfuente;}
         }
@@ -1034,13 +913,13 @@
     .formlog{
         width: 320px;
         max-width: 320px;
-        h3{
+        h2{
             font-size: 14px;}
     }
     .divlog1{
         width: 320px;
         max-width: 320px;
-        h3{
+        h2{
             font-size: 14px;}
         fieldset{
             padding: 0;

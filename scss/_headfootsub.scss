@@ -2,8 +2,7 @@
 
 .header{
     background: $colorprincipal; 
-    display: flex;
-    flex-direction: row;
+    @include flexbox (flex, row);
     justify-content: space-between;
     width: 100%;
     position: relative;
@@ -47,8 +46,7 @@
 
 .footer{
     background: $colorprincipal;
-    display: flex;
-    flex-direction: row;
+    @include flexbox (flex, row);
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
@@ -77,8 +75,7 @@
 
 .main{ 
     background: $colorsecundario;
-    display: flex;
-    flex-direction: row;
+    @include flexbox (flex, row);
     justify-content: space-between;
     align-content: center;
     height: 9em;

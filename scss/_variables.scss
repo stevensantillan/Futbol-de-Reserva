@@ -2,3 +2,41 @@ $colorprincipal: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 42%, r
 $colorsecundario: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
 $colorfuente: #f0ffff;
 $colorfuentehover: rgb(230, 126, 8);
+
+$bodys: (
+    dimension: -1,
+    ancho: 100%,
+    alto: 100%,
+    pad: 0,
+    margen: 0
+);
+
+.bodys{
+    z-index: map-get($bodys, dimension);
+    width: map-get($bodys, ancho); 
+    height:map-get($bodys, alto); 
+    padding:map-get($bodys, pad); 
+    margin:map-get($bodys, margen); 
+}
+
+.cajaestandar{
+    border-style: solid;
+    border-color:#000;
+    border-width: 2px;
+    background: $colorsecundario;
+    color: $colorfuente;}
+
+.cajaborderedondo{
+    @extend .cajaestandar;
+    border-radius: 5px;}
+
+.cajatablas{
+    @extend .cajaestandar;
+    background: rgb(243, 240, 240);
+    color: #000;
+}
+
+@mixin flexbox ($flex, $direction){
+    display: $flex;
+    flex-direction: $direction;
+}
