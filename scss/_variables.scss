@@ -1,5 +1,6 @@
-$colorprincipal: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 42%, rgba(10,178,212,1) 100%);
-$colorsecundario: linear-gradient(90deg, rgba(2,0,27,1) 0%, rgba(5,5,92,1) 9%, rgba(10,178,212,1) 59%);
+$colorprincipal: #0B64D9; 
+$colorsecundario:#A60321; 
+$colorsub: #14488C;
 $colorfuente: #f0ffff;
 $colorfuentehover: rgb(230, 126, 8);
 
@@ -21,7 +22,7 @@ $bodys: (
 
 .cajaestandar{
     border-style: solid;
-    border-color:#000;
+    border-color:#db1147;
     border-width: 2px;
     background: $colorsecundario;
     color: $colorfuente;}

@@ -74,8 +74,11 @@
 /*--------------SUBTITULOS---------------*/
 
 .main{ 
-    background: $colorsecundario;
+    background: $colorsub;
     @include flexbox (flex, row);
+    border-style: solid;
+    border-color:#0a3164;
+    border-width: 2px;
     justify-content: space-between;
     align-content: center;
     height: 9em;
