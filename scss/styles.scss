@@ -112,6 +112,9 @@
 .tabla{
     margin-top: 0.1%;
     margin-bottom: 0.1%;
+    td{padding-left: 20px;}
+    th{
+        text-align: center;}
 }
 
 /*------------INDEX-----------------*/
@@ -122,6 +125,7 @@
 
 .tablaest{
     padding: 0;
+    padding-left: 15px;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
     table{
@@ -141,12 +145,17 @@
         h3{
             text-align: center;
             text-decoration: underline;
-            padding-top: 1%;}
+            padding-top: 1%;
+            margin-top: 50px;
+            font-size: 40px;}
+            
         p{
             padding-top: 2%;
             overflow: hidden;
             padding-left: 2%;
-            padding-right: 2%;}
+            padding-right: 2%;
+            font-size: 20px;
+            margin-top: 130px;}
     }
 }
 
@@ -162,9 +171,13 @@
     h3{
         text-align: center;
         text-decoration: underline;
-        padding-top: 1%;}
+        padding-top: 1%;
+        margin-top: 50px;
+        font-size: 40px;}
     img{
         align-items: center;
+        height: 400px;
+        margin-top: 100px;
         padding: 3%;}
 }
 
@@ -241,11 +254,18 @@
 /*------------TABLA PARTIDOS-----------------*/
 
 .tablapart{
+    display: flex;
+    justify-content: space-around;
     height: auto;
     margin-bottom: 0.1%;
+    h2{
+        padding-top: 10px;
+        text-align: center;
+    }
     table{
-        height: 60em;
-        width: 100%;}
+        height: 40em;
+        width: 70%;
+        margin-left: 20%;}
 }
 
 /*------------PARTIDOS-----------------*/
@@ -259,9 +279,28 @@
     height: 900px;
     margin-top: 0.1%;
     margin-bottom: 0.1%;
+    h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
     table{
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        th{
+            padding-left: 10px;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        .posizq{
+            text-align: left;
+        }
     }
 }
 
@@ -546,55 +585,202 @@
 
 /*------------ESTADISTICAS-TABLET-----------------*/
 
+@media (max-width: 1400px){
+    .tablaest{
+        font-size: 15px;
+        img{
+            height: 18px;}
+        th{
+            padding-left: 10px;}
+        td{
+            padding-left: 10px;}
+    }
+    .sectionest1{
+        .sectionest1__cont p{
+            font-size: 22px;
+            margin-top: 50px;}
+    }
+    .sectionest2{
+        img{
+            height: 300px;
+            width: 440px;}
+    }
+        
+}
+
+@media (max-width: 1200px){
+    .tablaest{
+        font-size: 15px;
+        img{
+            height: 18px;}
+        th{
+            padding-left: 10px;}
+        td{
+            padding-left: 10px;}
+    }
+    .sectionest1{
+        .sectionest1__cont p{
+            font-size: 20px;
+            margin-top: 50px;}
+    }
+    .sectionest2{
+        img{
+            height: 250px;
+            width: 370px;}
+    }
+        
+}
+
+@media (max-width: 1075px){
+    .tablaest{
+        font-size: 15px;
+        img{
+            height: 18px;}
+        th{
+            padding-left: 10px;}
+        td{
+            padding-left: 10px;}
+    }
+    .sectionest1{
+        .sectionest1__cont p{
+            font-size: 18px;
+            margin-top: 50px;}
+    }
+    .sectionest2{
+        img{
+            height: 250px;
+            width: 330px;}
+    }
+        
+}
+
+@media (max-width: 991px){
+    .tablaest{
+        font-size: 15px;
+        img{
+            height: 18px;}
+        th{
+            padding-left: 10px;}
+        td{
+            padding-left: 10px;}
+    }
+    .sectionest1{
+        .sectionest1__cont p{
+            font-size: 18px;
+            margin-top: 50px;}
+    }
+    .sectionest2{
+        img{
+            height: 250px;
+            width: 300px;}
+    }
+        
+}
 
 @media (max-width: 960px){
-    .sectionest1__cont p{
-        font-size: 14px;}    
+    .tablaest{
+        font-size: 15px;
+        img{
+            height: 18px;}
+        th{
+            padding-left: 10px;}
+        td{
+            padding-left: 10px;}
+    }
+    .sectionest1{
+        .sectionest1__cont p{
+            font-size: 14px;
+            margin-top: 50px;}
+    }
+    .sectionest2{
+        img{
+            height: 250px;
+            width: 300px;}
+    }
+        
 }
 
 @media (max-width: 800px){
     .tablaest{
         width: 100%;
-        height: 450px;}
+        height: 450px;
+        overflow: scroll;}
     .sectionest1{
         width: 100%;
-        height: 400px;}
+        height: 400px;
+        overflow: scroll;
+        div{
+            h3{
+                margin-top: 0;}
+            p{
+                margin-top: 10px;}
+            }
+        }
     .sectionest2{
         width: 100%;
         height: 350px; 
         align-items: center;
+        h3{
+            margin-top: 0;}
         img{
             height: 300px;
-            width: 300px;}
+            width: 300px;
+            margin-top: 0;}
     }
 }
 
 @media (max-width: 680px){
     .tablaest{
         width: 100%;
-        height: 400px;}
+        height: 400px;
+        overflow: scroll;}
     .sectionest1{
         width: 100%;
-        height: 400px;}
+        height: 400px;
+        overflow: scroll;
+        div{
+            h3{
+                margin-top: 0;}
+            p{
+                margin-top: 10px;}
+            } 
+        }
     .sectionest2{
         width: 100%;
         height: 300px;
         align-items: center;
+        h3{
+            margin-top: 0;}
         img{
             height: 250px;
-            width: 250px;}
+            width: 250px;
+            margin-top: 0;}
     }
 }
 
 @media (min-width: 576px) and (max-width: 679px){
     .tablaest{
         width: 100%;
-        height: 400px;}
+        height: 400px;
+        overflow: scroll;}
     .sectionest1{
         width: 100%;
-        height: 300px;}
+        height: 300px;
+        overflow: scroll;
+        div{
+            h3{
+                margin-top: 0;}
+            p{
+                margin-top: 10px;}
+            } 
+        }
     .sectionest2{
-        width: 100%;}
+            width: 100%;
+            h3{
+                margin-top: 0;}
+            img{
+                margin-top: 0;} 
+            }
 }
     
 /*------------ESTADISTICAS-TABLET-----------------*/
@@ -611,9 +797,21 @@
     .sectionest1{
         width: 100%;
         height: 300px;
-        overflow: scroll;}
+        overflow: scroll;
+        div{
+            h3{
+                margin-top: 0;}
+            p{
+                margin-top: 10px;}
+            } 
+        }
     .sectionest2{
-        width: 100%;}
+        width: 100%;
+        h3{
+            margin-top: 0;}
+        img{
+            margin-top: 0;} 
+        }
 }
     
 /*------------ESTADISTICAS-MOBILE-----------------*/
@@ -697,7 +895,7 @@
     .tablapart{
         height: 800px;
         table{
-            height: 100%;}
+            height: 90%;}
     }
 }
 
@@ -720,7 +918,7 @@
     .tablapart{
         height: 800px;
         table{
-            height: 100%;}
+            height: 90%;}
     }
 }
 
@@ -744,7 +942,7 @@
     .tablapart{
         height: 700px;
         table{
-            height: 100%;}
+            height: 90%;}
     }
 }
 
@@ -767,7 +965,7 @@
     .tablapart{
         height: 700px;
         table{
-            height: 100%;}
+            height: 90%;}
     }
 }
 
@@ -790,7 +988,7 @@
     .tablapart{
         height: 600px;
         table{
-            height: 100%;}
+            height: 90%;}
     }
 }
 
@@ -817,7 +1015,34 @@
     .tablapart{
         height: 500px;
         table{
-            height: 100%;}
+            height: 90%;}
+    }
+}
+
+@media (max-width: 330px){
+    .galeria{
+        height: 500px;
+        max-height: 500px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .carousel-inner{
+            height: 450px;
+            max-height: 450px;
+            div img{
+                width: 700px;
+                max-width: 700px;
+                height: 450px;
+                max-height: 450px;}
+        }     
+    }
+    .tablapart{
+        height: 500px;
+        table{
+            height: 90%;
+            margin-left: 0px;
+        td img{
+            height: 23px;
+        }}
     }
 }
 
@@ -827,8 +1052,26 @@
 
 @media (max-width: 499px){
     .tablapos{
-        height: 600px;}
+        height: 600px;
+        table{
+            height: 90%;
+            width: 95%;
+            margin-left: 0;
+            margin-right: 0;
+            th{
+                font-size: 9px;}
+            td{
+                font-size: 9px;
+                b{
+                    font-size: 9px;}
+            }
+        }
+        td img{
+            height: 11px;}
+    }
 }
+
+
 
 /*------------POSICIONES MOBILE-----------------*/
 

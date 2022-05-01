@@ -195,12 +195,17 @@
 .tabla {
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
+  .tabla td {
+    padding-left: 20px; }
+  .tabla th {
+    text-align: center; }
 
 /*------------INDEX-----------------*/
 /*------------ESTADISTICAS-----------------*/
 /*--------------TABLA EST---------------*/
 .tablaest {
   padding: 0;
+  padding-left: 15px;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
   .tablaest table {
@@ -219,12 +224,16 @@
     .sectionest1 div h3 {
       text-align: center;
       text-decoration: underline;
-      padding-top: 1%; }
+      padding-top: 1%;
+      margin-top: 50px;
+      font-size: 40px; }
     .sectionest1 div p {
       padding-top: 2%;
       overflow: hidden;
       padding-left: 2%;
-      padding-right: 2%; }
+      padding-right: 2%;
+      font-size: 20px;
+      margin-top: 130px; }
 
 /*--------------NOTICIA 2 EST---------------*/
 .sectionest2 {
@@ -238,9 +247,13 @@
   .sectionest2 h3 {
     text-align: center;
     text-decoration: underline;
-    padding-top: 1%; }
+    padding-top: 1%;
+    margin-top: 50px;
+    font-size: 40px; }
   .sectionest2 img {
     align-items: center;
+    height: 400px;
+    margin-top: 100px;
     padding: 3%; }
 
 /*------------ESTADISTICAS-----------------*/
@@ -305,11 +318,17 @@
 
 /*------------TABLA PARTIDOS-----------------*/
 .tablapart {
+  display: flex;
+  justify-content: space-around;
   height: auto;
   margin-bottom: 0.1%; }
+  .tablapart h2 {
+    padding-top: 10px;
+    text-align: center; }
   .tablapart table {
-    height: 60em;
-    width: 100%; }
+    height: 40em;
+    width: 70%;
+    margin-left: 20%; }
 
 /*------------PARTIDOS-----------------*/
 /*------------POSICIONES-----------------*/
@@ -318,9 +337,24 @@
   height: 900px;
   margin-top: 0.1%;
   margin-bottom: 0.1%; }
+  .tablapos h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
   .tablapos table {
-    height: 100%;
-    width: 100%; }
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; }
+    .tablapos table th {
+      padding-left: 10px;
+      text-align: center; }
+    .tablapos table td {
+      text-align: center; }
+    .tablapos table .posizq {
+      text-align: left; }
 
 /*------------POSICIONES-----------------*/
 /*------------LOG IN-----------------*/
@@ -558,49 +592,153 @@
 
 /*------------INDEX-MOBILE-----------------*/
 /*------------ESTADISTICAS-TABLET-----------------*/
+@media (max-width: 1400px) {
+  .tablaest {
+    font-size: 15px; }
+    .tablaest img {
+      height: 18px; }
+    .tablaest th {
+      padding-left: 10px; }
+    .tablaest td {
+      padding-left: 10px; }
+  .sectionest1 .sectionest1__cont p {
+    font-size: 22px;
+    margin-top: 50px; }
+  .sectionest2 img {
+    height: 300px;
+    width: 440px; } }
+
+@media (max-width: 1200px) {
+  .tablaest {
+    font-size: 15px; }
+    .tablaest img {
+      height: 18px; }
+    .tablaest th {
+      padding-left: 10px; }
+    .tablaest td {
+      padding-left: 10px; }
+  .sectionest1 .sectionest1__cont p {
+    font-size: 20px;
+    margin-top: 50px; }
+  .sectionest2 img {
+    height: 250px;
+    width: 370px; } }
+
+@media (max-width: 1075px) {
+  .tablaest {
+    font-size: 15px; }
+    .tablaest img {
+      height: 18px; }
+    .tablaest th {
+      padding-left: 10px; }
+    .tablaest td {
+      padding-left: 10px; }
+  .sectionest1 .sectionest1__cont p {
+    font-size: 18px;
+    margin-top: 50px; }
+  .sectionest2 img {
+    height: 250px;
+    width: 330px; } }
+
+@media (max-width: 991px) {
+  .tablaest {
+    font-size: 15px; }
+    .tablaest img {
+      height: 18px; }
+    .tablaest th {
+      padding-left: 10px; }
+    .tablaest td {
+      padding-left: 10px; }
+  .sectionest1 .sectionest1__cont p {
+    font-size: 18px;
+    margin-top: 50px; }
+  .sectionest2 img {
+    height: 250px;
+    width: 300px; } }
+
 @media (max-width: 960px) {
-  .sectionest1__cont p {
-    font-size: 14px; } }
+  .tablaest {
+    font-size: 15px; }
+    .tablaest img {
+      height: 18px; }
+    .tablaest th {
+      padding-left: 10px; }
+    .tablaest td {
+      padding-left: 10px; }
+  .sectionest1 .sectionest1__cont p {
+    font-size: 14px;
+    margin-top: 50px; }
+  .sectionest2 img {
+    height: 250px;
+    width: 300px; } }
 
 @media (max-width: 800px) {
   .tablaest {
     width: 100%;
-    height: 450px; }
+    height: 450px;
+    overflow: scroll; }
   .sectionest1 {
     width: 100%;
-    height: 400px; }
+    height: 400px;
+    overflow: scroll; }
+    .sectionest1 div h3 {
+      margin-top: 0; }
+    .sectionest1 div p {
+      margin-top: 10px; }
   .sectionest2 {
     width: 100%;
     height: 350px;
     align-items: center; }
+    .sectionest2 h3 {
+      margin-top: 0; }
     .sectionest2 img {
       height: 300px;
-      width: 300px; } }
+      width: 300px;
+      margin-top: 0; } }
 
 @media (max-width: 680px) {
   .tablaest {
     width: 100%;
-    height: 400px; }
+    height: 400px;
+    overflow: scroll; }
   .sectionest1 {
     width: 100%;
-    height: 400px; }
+    height: 400px;
+    overflow: scroll; }
+    .sectionest1 div h3 {
+      margin-top: 0; }
+    .sectionest1 div p {
+      margin-top: 10px; }
   .sectionest2 {
     width: 100%;
     height: 300px;
     align-items: center; }
+    .sectionest2 h3 {
+      margin-top: 0; }
     .sectionest2 img {
       height: 250px;
-      width: 250px; } }
+      width: 250px;
+      margin-top: 0; } }
 
 @media (min-width: 576px) and (max-width: 679px) {
   .tablaest {
     width: 100%;
-    height: 400px; }
+    height: 400px;
+    overflow: scroll; }
   .sectionest1 {
     width: 100%;
-    height: 300px; }
+    height: 300px;
+    overflow: scroll; }
+    .sectionest1 div h3 {
+      margin-top: 0; }
+    .sectionest1 div p {
+      margin-top: 10px; }
   .sectionest2 {
-    width: 100%; } }
+    width: 100%; }
+    .sectionest2 h3 {
+      margin-top: 0; }
+    .sectionest2 img {
+      margin-top: 0; } }
 
 /*------------ESTADISTICAS-TABLET-----------------*/
 /*------------ESTADISTICAS-MOBILE-----------------*/
@@ -615,8 +753,16 @@
     width: 100%;
     height: 300px;
     overflow: scroll; }
+    .sectionest1 div h3 {
+      margin-top: 0; }
+    .sectionest1 div p {
+      margin-top: 10px; }
   .sectionest2 {
-    width: 100%; } }
+    width: 100%; }
+    .sectionest2 h3 {
+      margin-top: 0; }
+    .sectionest2 img {
+      margin-top: 0; } }
 
 /*------------ESTADISTICAS-MOBILE-----------------*/
 /*------------NOTICIAS TABLET-----------------*/
@@ -679,7 +825,7 @@
   .tablapart {
     height: 800px; }
     .tablapart table {
-      height: 100%; } }
+      height: 90%; } }
 
 @media (max-width: 1075px) {
   .galeria {
@@ -698,7 +844,7 @@
   .tablapart {
     height: 800px; }
     .tablapart table {
-      height: 100%; } }
+      height: 90%; } }
 
 @media (max-width: 960px) {
   .galeria {
@@ -717,7 +863,7 @@
   .tablapart {
     height: 700px; }
     .tablapart table {
-      height: 100%; } }
+      height: 90%; } }
 
 @media (max-width: 800px) {
   .galeria {
@@ -736,7 +882,7 @@
   .tablapart {
     height: 700px; }
     .tablapart table {
-      height: 100%; } }
+      height: 90%; } }
 
 @media (min-width: 500px) and (max-width: 679px) {
   .galeria {
@@ -755,7 +901,7 @@
   .tablapart {
     height: 600px; }
     .tablapart table {
-      height: 100%; } }
+      height: 90%; } }
 
 /*------------PARTIDOS TABLET-----------------*/
 /*------------PARTIDOS MOBILE-----------------*/
@@ -776,13 +922,48 @@
   .tablapart {
     height: 500px; }
     .tablapart table {
-      height: 100%; } }
+      height: 90%; } }
+
+@media (max-width: 330px) {
+  .galeria {
+    height: 500px;
+    max-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .galeria .carousel-inner {
+      height: 450px;
+      max-height: 450px; }
+      .galeria .carousel-inner div img {
+        width: 700px;
+        max-width: 700px;
+        height: 450px;
+        max-height: 450px; }
+  .tablapart {
+    height: 500px; }
+    .tablapart table {
+      height: 90%;
+      margin-left: 0px; }
+      .tablapart table td img {
+        height: 23px; } }
 
 /*------------PARTIDOS MOBILE-----------------*/
 /*------------POSICIONES MOBILE-----------------*/
 @media (max-width: 499px) {
   .tablapos {
-    height: 600px; } }
+    height: 600px; }
+    .tablapos table {
+      height: 90%;
+      width: 95%;
+      margin-left: 0;
+      margin-right: 0; }
+      .tablapos table th {
+        font-size: 9px; }
+      .tablapos table td {
+        font-size: 9px; }
+        .tablapos table td b {
+          font-size: 9px; }
+    .tablapos td img {
+      height: 11px; } }
 
 /*------------POSICIONES MOBILE-----------------*/
 /*------------LOG IN TABLET-----------------*/
