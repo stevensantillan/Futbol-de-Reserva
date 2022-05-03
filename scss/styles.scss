@@ -326,14 +326,14 @@
             text-align: center;
             font-size: 2em;
             #nombre{
-                height: 1.5em;
-                width: 8em;
-                font-size: 1.5em;}
+                height: 1em;
+                width: 10em;
+                font-size: 1em;}
             #pass{
                 display: inline;
-                height: 1.5em;
-                width: 8em;
-                font-size: 1.5em;}
+                height: 1em;
+                width: 10em;
+                font-size: 1em;}
             #ingresar{
                 background: rgb(238, 152, 53);
                 width: 5em;
@@ -365,22 +365,27 @@
         padding-bottom: 0.8em;
         @include flexbox (flex, column);
         align-items: center;
+        div label{
+            @include flexbox (flex, column);
+        }
         #nombrereg{
-            width: 8em;
-            height: 2em;
+            height: 1em;
+            width: 10em;
             font-size: 1em;} 
         #passreg{
-            width: 8em;
-            height: 2em;
+            height: 1em;
+            width: 10em;
             font-size: 1em;}
         #mailreg{
-            width: 8em;
-            height: 2em;
+            height: 1em;
+            width: 10em;
             font-size: 1em;}
         #socios{
-            width: 8em;
-            height: 2em;
-            font-size: 1em;}
+            height: 1.3em;
+            width: 10em;
+            font-size: 1em;
+            padding-top: 1px;
+            padding-bottom: 1px;}
         #limpiar{
             background: rgb(238, 152, 53);
             width: 5em;}
@@ -528,6 +533,7 @@
             flex-direction: column;
             align-items: center;
             margin-left: 0;
+            padding-top: 5px;
             li a #logomenu{
                 height: 2em;}
             }
@@ -538,6 +544,8 @@
             margin-right: 0 !important;
             li{
                 list-style-type: none;
+                padding-bottom: 10px;
+                font-size: 15px;
                 padding-left: 0;}
             }
         }
@@ -550,10 +558,42 @@
         "notice3";}
     .notice1__video{
         height: 250px;}
-    .notice2 a{
-        height: 200px;}
-    .notice3 a{
-            height: 200px;}
+    .notice2{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        a{
+            height: 200px;
+            &:hover{
+                display: none;}
+            }
+        h3{
+            text-align: center;}
+    } 
+    .notice3{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        a{
+            height: 200px;
+            &:hover{
+                display: none;}
+        }
+        h3{
+            text-align: center;
+        }
+    } 
+    .tabla{
+        margin-bottom: 2px;
+        tr{
+            th{
+                padding-top: 5px;}
+            td{ 
+                padding-bottom: 10px;
+                padding-top: 10px;
+                img{
+                    height: 30px;}
+                }
+        } 
+    } 
     .footer{
         display: flex;
         flex-direction: column;
@@ -565,13 +605,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            li a{
-                padding-left: 0;}
+            margin-left: 0;
+            li{
+                padding-top: 10px;
+                a{
+                    padding-left: 0;}
+            } 
         }
         .footer__copy{
             padding-bottom: 1%;
             padding-right: 0;
-            padding-left: 16px;
+            padding-left: 10px;
             margin-right: 0;
             width: 100px;
             em{
@@ -582,6 +626,8 @@
 }
     
 /*------------INDEX-MOBILE-----------------*/
+
+
 
 /*------------ESTADISTICAS-TABLET-----------------*/
 
@@ -788,29 +834,37 @@
 /*------------ESTADISTICAS-MOBILE-----------------*/
 
 @media (max-width: 575.98px) {
-    .main h1 b{
-        font-size: 50px;}
+    .main h1{
+        padding-top: 25px;
+        padding-left: 10px;
+        b{
+            font-size: 50px;}
+    } 
     .tablaest{
         width: 100%;
         height: 400px;
-        overflow: scroll;}
+        margin-top: 1px;
+        overflow: scroll;
+        padding-right: 15px;}
     .sectionest1{
         width: 100%;
-        height: 300px;
-        overflow: scroll;
+        height: 430px;
         div{
             h3{
                 margin-top: 0;}
-            p{
-                margin-top: 10px;}
-            } 
+            }
+        .sectionest1__cont p{
+            margin-top: 3px;} 
         }
     .sectionest2{
         width: 100%;
+        margin-bottom: 1px;
+
         h3{
             margin-top: 0;}
         img{
-            margin-top: 0;} 
+            margin-top: 0;
+            width: 280px;} 
         }
 }
     
@@ -848,6 +902,7 @@
  
 @media (max-width: 499px){  
     .sectionnot1{
+        margin-top: 1px;
         div{
             font-size: 12px;
             width: 100%;}
@@ -856,6 +911,8 @@
             padding-bottom: 10px;}    
     } 
     .sectionnot2{
+        margin-top: 1px;
+        margin-bottom: 1px;
         div{
             font-size: 12px;
             width: 100%;}
@@ -866,10 +923,17 @@
 }
  
 @media (max-width: 320px){
-    .sectionnot1 img{
-         height: 250px;}
-    .sectionnot2 img{
-         height: 250px;} 
+    .sectionnot1{
+        margin-top: 1px;
+        img{
+            height: 250px;}
+    } 
+    .sectionnot2{
+        margin-top: 1px;
+        margin-bottom: 1px;
+        img{
+            height: 250px;}
+    }  
 }
  
 /*------------NOTICIAS MOBILE-----------------*/
@@ -1002,6 +1066,8 @@
         max-height: 500px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-top: 1px;
+        margin-bottom: 1px;
         .carousel-inner{
             height: 450px;
             max-height: 450px;
@@ -1025,6 +1091,8 @@
         max-height: 500px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-top: 1px;
+        margin-bottom: 1px;
         .carousel-inner{
             height: 450px;
             max-height: 450px;
@@ -1053,6 +1121,7 @@
 @media (max-width: 499px){
     .tablapos{
         height: 600px;
+        margin-top: 1px;
         table{
             height: 90%;
             width: 95%;
@@ -1079,7 +1148,7 @@
 
 @media (max-width: 1420px){
     .divlog1 fieldset{
-        padding-left: 5px;
+        padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
         margin-right: 0px;}
@@ -1087,7 +1156,7 @@
 
 @media (max-width: 1200px){
     .divlog1 fieldset{
-        padding-left: 5px;
+        padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
         margin-right: 0px;}
@@ -1096,7 +1165,7 @@
 
 @media (max-width: 1075px){
     .divlog1 fieldset{
-        padding-left: 5px;
+        padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
         margin-right: 0px;}
@@ -1105,7 +1174,7 @@
 
 @media (max-width: 992px){
     .divlog1 fieldset{
-        padding-left: 5px;
+        padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
         margin-right: 0px;}
@@ -1113,7 +1182,7 @@
 
 @media (max-width: 960px){
     .divlog1 fieldset{
-        padding-left: 5px;
+        padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
         margin-right: 0px;}
@@ -1121,32 +1190,47 @@
 
 @media (max-width: 800px){
     .divlog1 fieldset{
-        padding-left: 5px;
+        padding-left: 0;
         padding-right: 0;
         margin-left: 0px;
         margin-right: 0px;}
 }
 
 
-@media (min-width: 500px) and (max-width: 679px){
+@media (min-width: 321px) and (max-width: 679px){
+    .formlog{
+        margin-top: 1px;
+        margin-bottom: 1px;
+        div{
+            #nombre{
+                height: 2em;}
+            #pass{
+                height: 2em;}
+            }
+    } 
     .divlog1 fieldset{
-        margin:0;}
+        padding-left: 0;
+        margin:0;
+        margin-bottom: 1px;
+        #nombrereg{
+            height: 2em;} 
+        #passreg{
+            height: 2em;}
+        #mailreg{
+            height: 2em;}
+        #socios{
+            height: 2em;}
+        #enviar{
+            margin-top: 3px;
+            margin-bottom: 3px;}
+        #limpiar{
+            margin-top: 3px;}
+        }
 }
 
 /*------------LOG IN TABLET-----------------*/
 
 /*------------LOG IN MOBILE-----------------*/
-
-@media (max-width: 499px){
-    .body__login{
-        width: 100%;
-        max-width: 499px;}
-    .divlog1 fieldset{
-        padding-left: 35px;
-        padding-right: 0;
-        margin-left: 0px;
-        margin-right: 0px;}
-}
 
 @media (max-width: 320px){
     .body__login{
@@ -1155,18 +1239,41 @@
     .formlog{
         width: 320px;
         max-width: 320px;
+        margin-top: 1px;
+        margin-bottom: 1px;
         h2{
             font-size: 14px;}
+        div{
+            #nombre{
+                height: 2em;}
+            #pass{
+                height: 2em;}
+        }    
     }
     .divlog1{
         width: 320px;
         max-width: 320px;
+        margin-bottom: 1px;
         h2{
             font-size: 14px;}
         fieldset{
             padding: 0;
             margin-left: 0px;
-            margin-right: 0px;}
+            margin-right: 0px;
+            #nombrereg{
+                height: 2em;} 
+            #passreg{
+                height: 2em;}
+            #mailreg{
+                height: 2em;}
+            #socios{
+                height: 2em;}
+            #enviar{
+                margin-top: 3px;
+                margin-bottom: 3px;}
+            #limpiar{
+                margin-top: 3px;}
+                }        
     }
 }
 
