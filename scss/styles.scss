@@ -112,7 +112,8 @@
 .tabla{
     margin-top: 0.1%;
     margin-bottom: 0.1%;
-    td{padding-left: 20px;}
+    td{padding-left: 20px;
+        width: 500px;}
     th{
         text-align: center;}
 }
@@ -265,11 +266,13 @@
     table{
         height: 40em;
         width: 70%;
-        margin-left: 20%;}
+        margin-left: 20%;
+        tr td{
+            width: 5000px;}
+        }
 }
 
 /*------------PARTIDOS-----------------*/
-
 
 /*------------POSICIONES-----------------*/
 
@@ -982,7 +985,8 @@
     .tablapart{
         height: 800px;
         table{
-            height: 90%;}
+            height: 90%;
+            margin-left: 70px;}
     }
 }
 
@@ -1006,7 +1010,8 @@
     .tablapart{
         height: 700px;
         table{
-            height: 90%;}
+            height: 90%;
+            margin-left: 50px;}
     }
 }
 
@@ -1029,7 +1034,8 @@
     .tablapart{
         height: 700px;
         table{
-            height: 90%;}
+            height: 90%;
+            margin-left: 50px;}
     }
 }
 
@@ -1052,7 +1058,8 @@
     .tablapart{
         height: 600px;
         table{
-            height: 90%;}
+            height: 90%;
+            margin-left: 0px;}
     }
 }
 
@@ -1081,7 +1088,8 @@
     .tablapart{
         height: 500px;
         table{
-            height: 90%;}
+            height: 90%;
+            margin-left: 0px;}
     }
 }
 
@@ -1108,6 +1116,8 @@
         table{
             height: 90%;
             margin-left: 0px;
+            td{
+                font-size: 11px;}
         td img{
             height: 23px;
         }}
