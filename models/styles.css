@@ -958,7 +958,9 @@
     height: 600px; }
     .tablapart table {
       height: 90%;
-      margin-left: 0px; } }
+      margin-left: 0px; }
+      .tablapart table td img {
+        height: 20px; } }
 
 /*------------PARTIDOS TABLET-----------------*/
 /*------------PARTIDOS MOBILE-----------------*/
@@ -982,7 +984,9 @@
     height: 500px; }
     .tablapart table {
       height: 90%;
-      margin-left: 0px; } }
+      margin-left: 0px; }
+      .tablapart table td img {
+        height: 18px; } }
 
 @media (max-width: 330px) {
   .galeria {
@@ -1006,9 +1010,9 @@
       height: 90%;
       margin-left: 0px; }
       .tablapart table td {
-        font-size: 11px; }
+        font-size: 10px; }
       .tablapart table td img {
-        height: 23px; } }
+        height: 14px; } }
 
 /*------------PARTIDOS MOBILE-----------------*/
 /*------------POSICIONES MOBILE-----------------*/

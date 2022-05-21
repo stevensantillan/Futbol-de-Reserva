@@ -1059,7 +1059,10 @@
         height: 600px;
         table{
             height: 90%;
-            margin-left: 0px;}
+            margin-left: 0px;
+            td img{
+                height: 20px;}
+        }
     }
 }
 
@@ -1089,7 +1092,10 @@
         height: 500px;
         table{
             height: 90%;
-            margin-left: 0px;}
+            margin-left: 0px;
+            td img{
+                height: 18px;}
+            }
     }
 }
 
@@ -1117,9 +1123,9 @@
             height: 90%;
             margin-left: 0px;
             td{
-                font-size: 11px;}
+                font-size: 10px;}
         td img{
-            height: 23px;
+            height: 14px;
         }}
     }
 }
